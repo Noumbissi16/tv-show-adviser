@@ -2,7 +2,6 @@ import axios from "axios";
 // import { FAKE_POPULARS, FAKE_RECOMMENDATIONS } from "./fake-data";
 import { BASE_URL } from "../config";
 
-
 const options = {
   method: "GET",
   headers: {
@@ -20,7 +19,7 @@ export class TVShowAPI {
       // return the request
       return response.results;
     } catch (e) {
-      alert("There was an error");
+      alert(e);
     }
     // return FAKE_POPULARS;
   }
