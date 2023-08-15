@@ -12,8 +12,6 @@ const options = {
 const url = "https://api.themoviedb.org/3/movie/popular?language=fr-FR&page=1";
 
 
-console.log(options);
-
 export class TVShowAPI {
   static async fetchPopulars() {
     try {
