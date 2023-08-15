@@ -6,11 +6,13 @@ const options = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlNWZjN2QxMTY2ZDQ4ZTc1MDYxYjQ5MDA2OTIxNDFiMCIsInN1YiI6IjY0ZDY5MzE4ZDA1MWQ5MDBhZjM0OWRmMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.29O6k26mRPj2ek1XCwPRd8VDP34tptRJcxHQUMEjR3U",
+    Authorization: process.env.REACT_APP_BEARER_KEY,
   },
 };
 const url = "https://api.themoviedb.org/3/movie/popular?language=fr-FR&page=1";
+
+
+console.log(options);
 
 export class TVShowAPI {
   static async fetchPopulars() {
