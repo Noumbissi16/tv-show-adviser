@@ -2,17 +2,30 @@
   font-family: Roboto;
   font-weight: 600;
   font-size: 20px;
+  margin-bottom: 20px;
 }
 .list:hover {
   overflow: overlay;
 }
-.list::-webkit-scrollbar {
-  display: none;
-}
+
 .list {
   display: flex;
   overflow-x: hidden;
+  padding-bottom: 5px;
 }
 .tv_show_item {
   margin-right: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar {
+  background: transparent;
+  height: 8px;
+  width: 18px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.61);
+  border-radius: 12px;
 }

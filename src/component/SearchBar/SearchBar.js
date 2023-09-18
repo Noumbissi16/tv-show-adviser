@@ -10,7 +10,7 @@ function SearchBar({ onSubmit }) {
     }
   };
   return (
-    <>
+    <div className={s.wrapper}>
       <SearchIcon size={27} className={s.icon} />
       <input
         value={value}
@@ -22,7 +22,7 @@ function SearchBar({ onSubmit }) {
         type="text"
         placeholder="Search a tv show you may like"
       />
-    </>
+    </div>
   );
 }
 
